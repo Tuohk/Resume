@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <title>我的简历</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #eee;
+      margin: 20px 0;
+    }
+
+    article {
+      width: 21cm;
+      min-height: 29.7cm;
+      background: white;
+      margin: 0 auto;
+      overflow: auto;
+      padding: 1em;
+    }
+  </style>
+  <style media="print">
+    body {
+      margin: 0;
+    }
+
+    .page2 {
+      page-break-before: always;
+      margin-top: 30px;
+    }
+  </style>
+  <style>
+    body {}
+
+    p {
+      margin: .3em 0;
+    }
+
+    h1 {
+      font-size: 25px;
+      margin-top: 0;
+    }
+
+    h4,
+    h5,
+    h6 {
+      font-weight: normal;
+    }
+
+    ol,
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    strong {
+      font-weight: normal;
+      color: #f60;
+    }
+
+    a {
+      color: #999;
+      text-decoration: none;
+      border-bottom: 1px solid;
+    }
+
+    p,
+    li {
+      color: #666;
+    }
+
+    strong {
+      font-weight: normal;
+    }
+
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+    }
+
+    .bio {
+      position: relative;
+    }
+
+    .bio img {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  </style>
+
+  <style>
+    .projects {}
+
+    .projects p {
+      color: #666;
+    }
+
+    .projects strong {
+      color: #f60;
+    }
+
+    .projects>ol {
+      margin-top: 0;
+      list-style-position: inside;
+      padding: 0;
+    }
+
+    .projects>ol>li {
+      margin-bottom: 24px;
+    }
+
+    .projects>ol>li>header {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .projects>ol>li h3 {
+      display: inline-block;
+    }
+  </style>
+  <style>
+    .skills {}
+
+    #skills {
+
+      width: 500px;
+      height: 270px;
+    }
+    @media print {
+      #skills{display:none;}
+    }
+
+
+    .skills>.wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .skills>.wrapper>:first-child {
+      margin-right: 24px;
+    }
+
+    .skills>.wrapper>#skills {}
+
+    .skills>.wrapper>ul {
+      color: #666;
+    }
+
+    .skills>.wrapper strong {
+      color: #f60;
+    }
+
+    .skills>.wrapper>ul>li {
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+  </style>
+  <style>
+    .openSource {}
+
+    .openSource>h2 {}
+
+    .openSource header img {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .openSource>ul {}
+
+    .openSource>ul>li {
+      margin-bottom: 24px;
+    }
+
+    .openSource header {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .openSource h3 {}
+  </style>
+  <style>
+    .jobs {}
+
+    .jobs>h2 {}
+
+    .jobs>ol {}
+
+    .jobs>ol>li {
+      margin: 12px 0;
+    }
+
+    .jobs header {
+      display: flex;
+      color: #666;
+      margin-bottom: 12px;
+    }
+
+    .jobs header>h3 {
+      font-size: 18px;
+      color: #333;
+    }
+
+    .jobs header>h4 {
+      margin-left: 1em;
+      font-size: 18px;
+    }
+
+    .jobs header>span {
+      font-size: 18px;
+      margin-left: auto;
+    }
+  </style>
+
+
+
+  <style>
+    @media (max-width: 500px) {
+      body {
+        margin: 0;
+      }
+
+      article {
+        width: auto;
+        height: auto;
+      }
+
+      .bio img {
+        display: none;
+      }
+
+      .skills .wrapper {
+        flex-direction: column;
+      }
+
+      #skills {
+        width: auto;
+      }
+      .jobs header{
+        flex-direction: column;
+      }
+      .jobs header >h3,
+      .jobs header >h4,
+      .jobs header >span {
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <article>
+    <section class="bio">
+      <h1>余佳宇</h1>
+      <img src="https://pic2.zhimg.com/v2-d206f673b1e7b8a7e3b31bc8041e05e2_xll.jpg" alt="" width="100" height="100">
+      <p>
+        男 | 21岁 | 前端开发工程师 | 深圳
+      </p>
+      <p>
+        手机：15625568641 | 微信：JY99824 | 邮箱：1195118385@qq.com
+      </p>
+    </section>
+
+    <section class="education">
+      <h2>教育经历</h2>
+      <p>
+        <span><time>2018年</time>~<time>2022年</time></span>
+        广东科技学院 网络工程 本科</p>
+    </section>
+
+    <section class="projects">
+      <h2>项目经历</h2>
+      <ol>
+        <li>
+          <header>
+            <h3>Yogae UI</h3>
+            <span>
+              <a href="https://github.com/Tuohk/Yogae-ui" target="view_window">源码链接</a>
+              <a href="https://tuohk.github.io/YogaeUI-visual-demo/index.html#/" target="view_window">项目预览</a>
+            </span>
+          </header>
+          <p>
+            项目简介：该项目是参照Ant Design, Element UI等UI库思路而自制的简易UI框架，项目基于Vue3和TypeScript, 尽量不使
+            用第三方库,官网支持响应式，使用SCSS为CSS预处理目前已支持Button，Dialog，switch等组件。完成该项目使我对Vue的
+            常见特征更加熟悉，同时提升自己对前端工程化流程以及单元测试重要性的深刻理解，近一步开源文化
+            
+          </p>
+          <p>
+           <strong> 技术要点：</strong> 1.理解Vue2和Vue3的区别
+                    2.Vue3中如何支持事件属性绑定
+                    3.了解Grid的布局的基本运用
+                    4.父子组件之间通信
+                    5.Vue3新版V-model的基本用法。
+          </p>
+          <p>
+            <strong> 技术栈：</strong> Vue3.0, TypeScript, VueRouter, Vite
+          </p>
+        </li>
+        <li>
+          <header>
+            <h3>CNODE中文社区</h3>
+            <span>
+              <a href="https://github.com/Tuohk/Community-demo" target="view_window">源码链接</a>
+              <a href="https://tuohk.github.io/Community-NewDemo/index.html#/" target="view_window">项目预览</a>
+            </span>
+          </header>
+          <p>
+            <strong> 项目简介：</strong> 该项目参照CNODE中文社区而采用Vue2实现还原的一个中文社区平台，项目调用CNODE官方社区提供的API，包
+含首页，用户文章列表，个人信息列表等页面，以Vue Cli为基础创建项目模板，使用Axios获取数据，通过Vue Router实现
+路由跳转，使用watch监听路由的变化
+          </p>
+          <p>
+            <strong> 技术要点：</strong> 1.vue.js计算属性
+                2.vue.js的内置指令和事件的绑定
+                3.vue.js的自定义事件和触发
+                4.vue-router路由的跳转和监听
+                5.父子组件之间的数据传递
+          </p>
+          <p>
+            <strong> 技术栈：</strong> Vue2, Vue Router, jQuery
+          </p>
+        </li>
+        <li>
+          <header>
+            <h3>简一导航首页</h3>
+            <span>
+              <a href="https://github.com/Tuohk/Navigation-page" target="view_window">源码链接</a>
+            </span>
+          </header>
+          <p>
+            <strong> 项目简介：</strong> 一款清爽简洁的导航首页，给用户全新的使用体验。
+          </p>
+
+          <p>
+            <strong> 技术要点：</strong> 理解媒体查询，兼容移动端和PC端，理解LocalStorage。
+
+          </p>
+          <p>
+            <strong> 技术栈：</strong> jQuery、CSS 布局、媒体查询、localStorage、SVG Symbols、iconfont.cn、阻止冒泡、JSON 序列化
+
+          </p>
+        </li>
+      </ol>
+    </section>
+
+
+
+
+
+    <section class="skills">
+      <h2>技能</h2>
+      <div class="wrapper">
+        <div id="skills"></div>
+        <ul>
+            <li>  熟悉HTML, DIV + CSS 的页面布局， 能根据设计图<strong>像素级</strong>动完成页面制作</li>
+            <li>  熟悉HTML5及语义化，掌握CSS3<strong>动画，过渡效果</strong>动等常用技术</li>
+            <li>  熟悉<strong>原生JavaScript，会使用<strong>ES6+</strong>常用规范，了解<strong>TypeScript</strong></li>
+            <li>  熟悉Vue框架功能，理解如<strong>组件，虚拟DOM，双向绑定</strong>等概念，并开发项目</li>
+            <li>  有移动端开发经验，理解<strong>响应式</strong>等技术制作设配手机设备的页面</li>
+            <li>  了解<strong>HTTP</strong>相关知识，了解常用的Web性能优化</li>
+            <li>  熟练使用VsCode, WebStorm，Git</strong>等开发工具</li>
+            <li>  激情，抗压能力强，自我驱动，追求效率与美。</li>
+        </ul>
+      </div>
+    </section>
+
+
+
+    <section class="openSource">
+      <h2>开源项目</h2>
+      <ul>
+        <li>
+          <header>
+            <h3>会动的代码-太极图</h3>
+            <span>
+            <a href="https://github.com/Tuohk/TaiJi" target="view_window">源码链接</a>
+            <a href="https://tuohk.github.io/TaiJi/src/index.html" target="view_window">项目预览</a>
+          </span>
+          </header>
+          <p><strong> 项目简介：</strong>该项目是一个使用<strong>纯原生JS</strong>开发的，动态显示CSS画出太极图过程的小作品，该作品思路是<strong>通过间隔计时器遍历</strong>预
+            先设置在标签内的代码，将其一个个显示在页面上，并在style标签上作同样处理，以便CSS生效。此外，实现了<strong>代码调速</strong>功能。
+            </p>
+            <p><strong> 技术要点：</strong>
+             1.获取文档对象模型 将web 页面与到脚本或编程语言连接起来
+              2.理解<strong>定时器setTimeout</strong>的实际运用
+              3.兼容移动端与PC端的布局
+              </p>
+        </li>
+        <li class="page2">
+          <header>
+            <h3>画一只小蓝鼠</h3>
+            <span>
+              <a href="https://github.com/Tuohk/The-little-blue-mouse" target="view_window">源码链接</a>
+              <a href="https://tuohk.github.io/The-little-blue-mouse-/index.html" target="view_window">项目预览</a>
+            </span>
+          </header>
+          <p>这是我在学习 <strong>CSS3和动画</strong> 时制作的一个可爱作品</p>
+        </li>
+        <li>
+          <header>
+            <h3>简易画板</h3>
+            <span>
+              <a href="https://github.com/Tuohk/Canvas-demo-1" target="view_window">源码链接</a>
+              <a href="https://tuohk.github.io/Canvas-demo-1/" target="view_window">项目预览</a>
+            </span>
+          </header>
+          <p>我在学习 <strong>Canvas</strong> 时做的一个小作品</p>
+        </li>
+      </ul>
+    </section>
+
+
+
+    <section class="jobs">
+      <h2>校园经历</h2>
+      <ol>
+        <li>
+          <ul>
+            <li>
+              1.曾担任校礼模司仪，参加校级元旦晚会，国庆晚会等晚会走秀表演
+            </li>
+            <li>
+              2.大一至今期间担任班干部兼组织委员，多次组织班级校内活动，锻炼了自己的组织协调能力；
+            </li>
+            <li>
+              3.大一期间志愿东莞马拉松志愿者；
+            </li>
+            <li>
+              4.大一期间参加免费午餐广东大学生驿站，参加多次公益活动，协助团队都取得了不错的效果
+            </li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+    <section class="others">
+      <h2>技能/证书及其他</h2>
+      <ul>
+        <li><a href="https://tuohk.github.io/" target="view_window">技术学习博客</a></li>
+        <li><a href="https://github.com/Tuohk" target="view_window">我的Github</a></li>
+        <li>证书： CCAT(网络工程师)，OCJP(初级)，英语（CET-4）</li>
+        <li>比赛: 1. 2020全国三创大赛校级特等奖 2.2019华为ICT初赛前100</li>
+        <li>兴趣爱好： 健身，一周5次</li>
+            
+            
+            
+            
+      </ul>
+    </section>
+
+  </article>
+  <script src="https://cdn.bootcss.com/echarts/4.6.0/echarts.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
